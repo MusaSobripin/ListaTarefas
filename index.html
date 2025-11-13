@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!-- Viewport é crucial para responsividade em celulares -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas Estruturadas</title>
+    <title>Lista de Tarefas Estruturada (Aula 4 e 5)</title>
+    <!-- Linka o CSS para dar vida à página -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Contêiner principal da aplicação -->
     <div class="card">
-        <h2> Minhas Tarefas do Mês (Simulação API)</h2>
-
+        <!-- Título do projeto -->
+        <h2>Minhas Tarefas do Mês (Simulação API)</h2>
+        
+        <!-- Lista VAZIA onde o JavaScript injetará os itens -->
+        <!-- O ID é o ponto de contato com o script.js -->
         <ul id="listaDeTarefas">
-
+            <!-- Os itens <li> serão gerados dinamicamente aqui -->
         </ul>
-
-        <button id="carregarBtn"> Carregar Dados </button>
+        
+        <!-- Botão para disparar o carregamento simulado dos dados -->
+        <button id="carregarBtn">Carregar Dados</button>
     </div>
+
+    <!-- O script.js deve ser o último elemento do body para garantir que todos os elementos HTML já foram carregados antes de o JS tentar encontrá-los. -->
     <script src="script.js"></script>
 </body>
 </html>
